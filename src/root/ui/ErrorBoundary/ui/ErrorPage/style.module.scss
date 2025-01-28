@@ -1,0 +1,157 @@
+@import '@hover';
+.outerWrapper {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.wrapper {
+  position: relative;
+  width: 100vw;
+  padding: 23px 0;
+  background: rgb(255 220 162 / 100%);
+}
+.innerWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 493px;
+  max-height: 493px;
+  padding: 30px 20px;
+  background: rgb(255 170 29 / 100%);
+}
+.patternImg {
+  position: absolute;
+  top: 23px;
+  left: 50%;
+  z-index: 0;
+  transform: translateX(-50%);
+}
+.errorImg {
+  position: absolute;
+  right: 50px;
+  bottom: 25px;
+}
+.errorCode {
+  z-index: 1;
+  padding: 0 0 10px;
+  color: #343434;
+  font-weight: 800;
+  font-size: 150px;
+  line-height: 0;
+}
+.errorTitle {
+  z-index: 1;
+  margin: -35px 0 0;
+  color: #343434;
+  font-weight: 600;
+  font-size: 24px;
+}
+.errorDescription {
+  z-index: 1;
+  max-width: 400px;
+  color: #343434;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -0.03em;
+  text-align: center;
+}
+.text {
+  z-index: 1;
+  padding: 0 0 15px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: -0.04em;
+  text-align: center;
+}
+.ul {
+  z-index: 1;
+  .dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin: 20px 8px 2px 0;
+    background: #6a6a6a;
+    border-radius: 4px;
+  }
+  p {
+    display: inline;
+    color: #343434;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 35px;
+    letter-spacing: -0.04em;
+    a {
+      color: #343434;
+
+      @include hover {
+        color: black;
+      }
+    }
+  }
+}
+
+@media (width <= 800px) {
+  .wrapper {
+    width: 100vw;
+    height: 100%;
+    min-height: 100vh;
+    max-height: 100vh;
+  }
+  .innerWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 90%;
+    max-height: 90%;
+  }
+  .patternImg {
+    top: 0;
+    top: 30px;
+    left: 10%;
+    z-index: 0;
+    display: none;
+    width: 100%;
+    max-width: 100%;
+    padding: 40px 0;
+    object-fit: cover;
+    object-position: center;
+  }
+  .errorCode {
+    padding: 0 0 20px;
+    font-weight: 800;
+    font-size: 100px;
+    line-height: 100px;
+  }
+  .errorTitle {
+    font-size: 20px;
+  }
+  .errorDescription {
+    padding: 0 0 60px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .text,
+  .ul p,
+  .ul {
+    z-index: 1;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.04em;
+    text-align: center;
+  }
+  .text {
+    padding: 0 0 10px;
+  }
+  .errorImg {
+    top: 40px;
+    left: 50%;
+    max-width: 100vw;
+    transform: translateX(-50%);
+  }
+}

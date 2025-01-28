@@ -1,0 +1,5 @@
+.mantine-Checkbox-root {
+  .mantine-Checkbox-input:not(:checked) {
+    background-color: var(--mantine-color-neutral-1);
+  }
+}

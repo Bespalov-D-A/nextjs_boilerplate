@@ -1,0 +1,159 @@
+/* stylelint-disable custom-property-pattern */
+.mantine-Text-root[data-variant='p1'] {
+  --text-fz: var(--mantine-font-size-xl);
+  --text-lh: var(--mantine-line-height-xl);
+}
+.mantine-Text-root[data-variant='p2'] {
+  --text-fz: var(--mantine-font-size-lg);
+  --text-lh: var(--mantine-line-height-lg);
+}
+.mantine-Text-root[data-variant='p3'] {
+  --text-fz: var(--mantine-font-size-md);
+  --text-lh: var(--mantine-line-height-md);
+}
+.mantine-TextInput-input[data-variant='default'] {
+  --_input-placeholder-color: var(--mantine-color-neutral-8);
+
+  padding-left: 8;
+  color: var(--mantine-color-neutral-9);
+  border-width: 2;
+}
+.mantine-TextInput-wrapper[data-variant='default'] {
+  --_input-bd: var(--mantine-color-neutral-3);
+  --input-height: 3rem;
+}
+.mantine-TextInput-section {
+  --_input-section-color: var(--mantine-color-neutral-8);
+
+  border-radius: var(--_input-radius);
+  transition:
+    border-color 0.1s ease,
+    color 0.1s ease,
+    background-color 0.1s ease;
+}
+.mantine-TextInput-label {
+  --_input-label-color: var(--mantine-color-neutral-8);
+
+  margin-bottom: 8px;
+  margin-left: '6px';
+}
+.mantine-Button-root {
+  --button-height: 56px;
+  --button-radius: var(--mantine-radius-xl);
+
+  color: var(--mantine-color-neutral-0);
+  font-weight: 400;
+  &[data-variant='text-btn'] {
+    --button-bg: transparent;
+    --button-hover: transparent;
+    --button-color: var(--mantine-color-black);
+    --button-fz: rem(13);
+    --button-padding-x: 0;
+    --button-justify: bottom;
+  }
+  &[data-variant='outline-dark'] {
+    --button-bg: transparent;
+    --button-hover: var(--mantine-color-black);
+    --button-hover-color: #fff;
+    --button-bd: 1.4px solid var(--mantine-color-black);
+    --button-color: var(--mantine-color-black);
+    --button-radius: var(--mantine-radius-md);
+  }
+  &[data-variant='outline'] {
+    --button-bd: 2px solid var(--mantine-color-primary-4);
+  }
+  &[data-variant='yellow'] {
+    --button-bg: var(--mantine-color-analog-4);
+    --button-hover: var(--mantine-color-analog-4);
+    --button-color: var(--mantine-color-black);
+    --button-fz: 20px;
+  }
+  &[data-variant='compact-sm'] {
+    --button-height: 35px;
+    --button-radius: var(--mantine-radius-sm);
+  }
+  &[data-variant='compact-md'] {
+    --button-height: 48px;
+    --button-radius: var(--mantine-radius-sm);
+  }
+  &[data-variant='compact-lg'] {
+    --button-height: 50px;
+    --button-radius: var(--mantine-radius-md);
+  }
+  &[data-variant='base'] {
+    --button-fz: 20px;
+    --button-height: 58px;
+    --button-bg: var(--mantine-color-green-6);
+    --button-hover: var(--mantine-color-green-8);
+    --button-radius: var(--mantine-radius-xl);
+  }
+  &[data-variant='baseb'] {
+    --button-fz: 24px;
+    --button-bg: var(--mantine-color-green-6);
+    --button-hover: var(--mantine-color-green-8);
+    --button-radius: var(--mantine-radius-xl);
+    --button-bd: solid 3px #fff;
+  }
+  &[data-variant='basec'] {
+    --button-height: 50px;
+    --button-fz: 20px;
+    --button-bg: var(--mantine-color-green-6);
+    --button-hover: var(--mantine-color-green-8);
+    --button-radius: var(--mantine-radius-xxl);
+  }
+  &[data-variant='orange'] {
+    --button-fz: 24px;
+    --button-bg: #f7931e;
+    --button-hover: #f7a03d;
+    --button-color: #fff;
+    --button-radius: var(--mantine-radius-xl);
+    --button-hover-color: #fff;
+    --button-bd: solid 3px #cfc8c8;
+  }
+}
+.mantine-Input-input.mantine-Select-input[data-variant='default'] {
+  min-height: 40;
+  padding-left: var(--mantine-spacing-xs);
+  border-radius: var(--mantine-radius-lg);
+}
+.mantine-NativeSelect-input[data-variant='default'] {
+  min-height: 40;
+  padding-left: var(--mantine-spacing-xs);
+  border-radius: var(--mantine-radius-xl);
+}
+.mantine-Checkbox-root {
+  --checkbox-radius: 5px;
+  .mantine-Checkbox-input {
+    width: 20px;
+    height: 18px;
+    background: transparent;
+    border-color: inherit;
+    border-width: 1.6px;
+    cursor: pointer;
+    &:not(:checked) {
+      background: transparent;
+    }
+  }
+}
+.mantine-Checkbox-label {
+  font-size: 18px;
+  line-height: 18px;
+}
+.mantine-Checkbox-icon {
+  width: 11px;
+  height: 10px;
+  margin-top: 4px;
+  margin-left: 4px;
+}
+.mantine-Divider-root {
+  border-radius: 50px;
+}
+.mantine-Badge-root {
+  --badge-fz: calc(0.4375rem * var(--mantine-scale));
+  --badge-height: calc(0.625rem * var(--mantine-scale));
+  --_badge-width: auto;
+
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}

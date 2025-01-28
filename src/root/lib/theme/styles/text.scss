@@ -1,0 +1,10 @@
+h1,
+h2,
+h3,
+h4,
+label,
+h5,
+p:not(.mantine-InputWrapper-error),
+span {
+  color: var(--mantine-color-text-4);
+}

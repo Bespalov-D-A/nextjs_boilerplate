@@ -1,0 +1,26 @@
+@import '@vars';
+html,
+body {
+  height: 100%;
+}
+html {
+  font-size: 16px;
+}
+body {
+  color: var(--mantine-text-color-4);
+  font-size: 16px;
+  background: var(--mantine-color-neutral-0) !important;
+}
+a,
+a:link,
+a:visited,
+a:active {
+  // font-weight: 400;font-weightfont-weightfont-weightfont-weightfont-weightfont-weightfont-weightfont-weightfont-weightfont-weightfont-weightfont-weightfont-weightfont-weight
+}
+:root {
+  --bpxs: $bp-xs;
+  --bpsm: $bp-sm;
+  --bpmd: $bp-md;
+  --bplg: $bp-lg;
+  --pbxl: $bp-xl;
+}

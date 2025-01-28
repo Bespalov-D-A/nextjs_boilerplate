@@ -1,0 +1,37 @@
+@import '@hover';
+.mantine-Button-root[data-variant='transparent'] {
+  @include hover {
+    * {
+      color: var(--mantine-color-primary-4);
+    }
+  }
+}
+.mantine-Button-root[data-variant='baseb'],
+.mantine-Button-root[data-variant='basec'],
+.mantine-Button-root[data-variant='base'] {
+  min-width: 100px;
+  span {
+    color: var(--mantine-color-neutral-0);
+  }
+  &:active {
+    background-color: var(--mantine-color-green-7);
+  }
+  &[data-disabled='true'] {
+    color: #fff;
+    background-color: var(--mantine-color-green-0);
+  }
+}
+.mantine-Button-root[data-variant='base'] {
+  border-radius: var(--mantine-radius-xl);
+}
+.mantine-Button-root[data-variant='baseb'] {
+  border-radius: var(--mantine-radius-xl);
+}
+.mantine-Button-root[data-variant='basec'] {
+  border-radius: var(--mantine-radius-xxl);
+}
+.mantine-Button-root[data-variant='orange'] {
+  span {
+    color: #fff;
+  }
+}

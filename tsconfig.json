@@ -1,0 +1,57 @@
+{
+  "compileOnSave": false,
+  "exclude": ["node_modules", "tmp"],
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "outDir": "./dist",
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {},
+    "jsx": "preserve",
+    "allowJs": false,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "noEmit": false,
+    "incremental": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "composite": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "paths": {
+    "@pages/*": ["./pages/*"],
+    "@widgets/*": ["./widgets/*"],
+    "@features/*": ["./features/*"],
+    "@entities/*": ["./entities/*"],
+    "@shared/*": ["./shared/*"],
+    "@root/*": ["./root/*"]
+  },
+  "files": [],
+  "include": [
+    "./global.d.ts",
+    "next-env.d.ts",
+    ".next/types/**/*.ts",
+    "./next.config.mjs",
+    "./src/shared/assests/data/countries.json"
+  ],
+  "references": [
+    {
+      "path": "./tsconfig.app.json"
+    }
+  ]
+}

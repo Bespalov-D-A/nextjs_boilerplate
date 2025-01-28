@@ -1,0 +1,53 @@
+{
+  "extends": [
+    "stylelint-config-css-modules",
+    "stylelint-config-standard",
+    "stylelint-config-standard-scss",
+    "stylelint-config-rational-order"
+  ],
+  "plugins": [
+    "stylelint-scss",
+    "stylelint-order",
+    "stylelint-declaration-block-no-ignored-properties",
+    "stylelint-prettier"
+  ],
+  "rules": {
+    "scss/selector-no-redundant-nesting-selector": null,
+    "no-descending-specificity": null,
+    "font-family-name-quotes": "always-where-required",
+    "font-family-no-missing-generic-family-keyword": true,
+    "at-rule-no-unknown": null,
+    "scss/at-rule-no-unknown": true,
+    "plugin/declaration-block-no-ignored-properties": true,
+    "rule-empty-line-before": "never",
+    "prettier/prettier": [
+      true,
+      {
+        "tabWidth": 2,
+        "useTabs": false,
+        "singleQuote": true,
+        "trailingComma": "es5",
+        "semi": true,
+        "insertPragma": false,
+        "requirePragma": false,
+        "endOfLine": "auto"
+      }
+    ],
+    "selector-pseudo-class-no-unknown": [
+      true,
+      { "ignorePseudoClasses": ["global"] }
+    ],
+    "selector-pseudo-class-disallowed-list": [
+      ["hover"],
+      {
+        "message": "Instead of :hover use the mixin \n\n @import \"@hover\"; \n\n and then \n\n .myClass { ...\n @include hover { ... }\n}"
+      }
+    ],
+    "selector-class-pattern": [
+      "^(mantine-[A-Za-z0-9-]+|[a-z0-9]+(?:-[a-z0-9]+)*|[a-z0-9]+(?:-[a-z0-9]+)*|[a-z][a-zA-Z0-9]+)$",
+      {
+        "message": "Expected class selector to start with 'mantine-' and follow with camel case, or be in kebab-case."
+      }
+    ]
+  }
+}

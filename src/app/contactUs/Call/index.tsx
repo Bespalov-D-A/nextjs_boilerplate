@@ -9,7 +9,7 @@ const Call: FC = () => {
   return (
     <div className={styles.callWrap}>
       <div>
-        <Flex mb="16px">
+        <Flex className={styles.titleWrap}>
           <img width="28px" src="/icons/call.svg" alt="call icon" />
           <span className={styles.title}>Call us</span>
         </Flex>

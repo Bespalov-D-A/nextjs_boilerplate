@@ -9,13 +9,13 @@ const Email:FC = () => {
   return (
     <div className={styles.emailWrap}>
       <div>
-        <Flex mb="16px">
+        <Flex className={styles.titleWrap}>
           <img width="40px" src="/icons/email.svg" alt="email icon" />
           <span className={styles.title}>Email us</span>
         </Flex>
         <span className={styles.text}>Please call us if you have an urgent issue (e.g., cancellations, problems with pickup/check-in, or trouble locating a branch)</span>
       </div>
-      <div className={styles.form}>
+      <div className={styles.formWrap}>
         <ContactForm/>
       </div>
     </div>

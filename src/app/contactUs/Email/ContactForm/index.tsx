@@ -4,7 +4,7 @@ import { TextInput, Button, Group, Select, Flex, Textarea } from '@mantine/core'
 import styles from './contactForm.module.scss'
 
 const ContactForm: FC = () => {
-  const isSend = true;
+  const isSend = false;
 
   return (
     <form>
@@ -54,7 +54,7 @@ const ContactForm: FC = () => {
       {!isSend && (
         <>
           <span className={styles.text}>* Indicates required field</span>
-          <Flex mt="24px" align="center" justify="space-between">
+          <Flex mt="24px" align="center" justify="space-between" className={styles.flexGroup}>
             <Group>
               <Button type="submit" className={styles.submitBtn}>Відправити</Button>
             </Group>

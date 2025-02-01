@@ -1,17 +1,35 @@
 @import "../../ui/text";
 @import "../../ui/vars";
+@import "../../ui/mixinMedia";
 
 .cooperationWrap {
   display: grid;
   grid-template-columns: 326px 692px;
   justify-content: space-between;
   padding-bottom: 64px;
+
+  @include max-lg {
+    grid-template-columns: 1fr;
+  }
+}
+.titleWrap {
+  margin-bottom: 16px;
+
+  @include max-lg {
+    justify-content: center;
+    margin-bottom: 32px;
+  }
 }
 .title {
   @extend .text40;
   margin-left: 8px;
   font-weight: 700;
   color: $orangeYellow;
+}
+.contentWrap {
+  @include max-lg {
+    text-align: center;
+  }
 }
 .content {
   @extend .text16;

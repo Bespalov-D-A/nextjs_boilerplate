@@ -1,5 +1,6 @@
 @import "../../ui/vars";
 @import "../../ui/text";
+@import "../../ui/mixinMedia";
 
 .header {
   width: 100%;
@@ -19,6 +20,11 @@
   color: $white;
   font-weight: 700;
   margin: 0;
+
+  @include max-md {
+    font-size: 30px;
+    line-height: 32px;
+  }
 }
 .slogan {
   @extend .text20;

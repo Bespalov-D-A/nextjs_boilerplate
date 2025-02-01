@@ -1,6 +1,25 @@
 @import "../../../ui/text";
 @import "../../../ui/vars";
+@import "../../../ui/mixinMedia";
 
+.wrapper {
+  @include max-md {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  @include max-sm {
+    flex-direction: row;
+  }
+}
+.topWrap {
+  margin-bottom: 8px;
+
+  @include max-sm {
+    margin-bottom: 0;
+    margin-right: 8px;
+  }
+}
 .img {
   width: 36px;
   margin-right: 14px;
@@ -9,6 +28,11 @@
   @extend .text30;
   display: block;
   color: $darkText;
+
+  @include max-sm {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 .phoneLink {
   @extend .text18;

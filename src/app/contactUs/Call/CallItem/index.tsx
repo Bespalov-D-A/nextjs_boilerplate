@@ -12,8 +12,8 @@ interface IProps {
 
 const CallItem: FC<IProps> = ({ flagName, country, phone }) => {
   return (
-    <div>
-      <Flex mb="8px">
+    <div className={styles.wrapper}>
+      <Flex className={styles.topWrap}>
         <img className={styles.img} src={`${imageUrl}/${flagName}.svg`} alt="flag" />
         <span className={styles.label}>{country}</span>
       </Flex>

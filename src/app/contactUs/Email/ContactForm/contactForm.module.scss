@@ -1,0 +1,65 @@
+@import "../../../ui/text";
+@import "../../../ui/vars";
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 36px;
+}
+.inputWrap {
+  margin-bottom: 24px;
+
+  label {
+    margin-bottom: 8px;
+  }
+  input {
+    height: 40px;
+    min-height: 40px;
+    border-radius: 9px;
+  }
+}
+.textArea {
+  label {
+    margin-bottom: 8px;
+  }
+  textarea {
+    height: 104px;
+    min-height: 104px;
+    border-radius: 9px;
+  }
+}
+.text {
+  @extend .text16;
+  display: block;
+  color: $darkText;
+  margin-top: 20px;
+}
+.submitBtn {
+  width: 270px;
+  background: $success;
+  color: $white;
+  height: 48px;
+  border-radius: 9px;
+
+  span {
+    color: $white;
+  }
+}
+.bottomLabel {
+  @extend .text16;
+  color: $darkText;
+  margin-left: 12px;
+
+  .link {
+    font-weight: 600;
+    color: $darkText;
+  }
+}
+.textAfterSend {
+  @extend .text16;
+  display: block;
+  color: $darkGreen;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 600;
+}

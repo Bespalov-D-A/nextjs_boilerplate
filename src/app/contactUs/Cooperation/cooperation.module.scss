@@ -1,0 +1,24 @@
+@import "../../ui/text";
+@import "../../ui/vars";
+
+.cooperationWrap {
+  display: grid;
+  grid-template-columns: 326px 692px;
+  justify-content: space-between;
+  padding-bottom: 64px;
+}
+.title {
+  @extend .text40;
+  margin-left: 8px;
+  font-weight: 700;
+  color: $orangeYellow;
+}
+.content {
+  @extend .text16;
+  color: $darkText;
+}
+.link {
+  @extend .text16;
+  color: $darkText;
+  font-weight: 600;
+}

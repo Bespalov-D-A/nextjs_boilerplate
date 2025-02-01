@@ -1,0 +1,26 @@
+@import "../../ui/text";
+@import "../../ui/vars";
+
+.emailWrap {
+  display: grid;
+  grid-template-columns: 326px 692px;
+  justify-content: space-between;
+  padding-bottom: 64px;
+  margin-bottom: 64px;
+  border-bottom: 2px solid $orangeYellow;
+}
+.title {
+  @extend .text40;
+  display: block;
+  margin-left: 8px;
+  font-weight: 700;
+  color: $orangeYellow;
+}
+.text {
+  display: block;
+  @extend .text16;
+  color: $darkText;
+}
+.form {
+
+}

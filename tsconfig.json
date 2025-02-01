@@ -1,6 +1,9 @@
 {
   "compileOnSave": false,
-  "exclude": ["node_modules", "tmp"],
+  "exclude": [
+    "node_modules",
+    "tmp"
+  ],
   "compilerOptions": {
     "rootDir": ".",
     "sourceMap": true,
@@ -11,7 +14,10 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "esnext",
-    "lib": ["es2020", "dom"],
+    "lib": [
+      "es2020",
+      "dom"
+    ],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
@@ -34,12 +40,24 @@
     ]
   },
   "paths": {
-    "@pages/*": ["./pages/*"],
-    "@widgets/*": ["./widgets/*"],
-    "@features/*": ["./features/*"],
-    "@entities/*": ["./entities/*"],
-    "@shared/*": ["./shared/*"],
-    "@root/*": ["./root/*"]
+    "@pages/*": [
+      "./pages/*"
+    ],
+    "@widgets/*": [
+      "./widgets/*"
+    ],
+    "@features/*": [
+      "./features/*"
+    ],
+    "@entities/*": [
+      "./entities/*"
+    ],
+    "@shared/*": [
+      "./shared/*"
+    ],
+    "@root/*": [
+      "./root/*"
+    ]
   },
   "files": [],
   "include": [
@@ -47,7 +65,8 @@
     "next-env.d.ts",
     ".next/types/**/*.ts",
     "./next.config.mjs",
-    "./src/shared/assests/data/countries.json"
+    "./src/shared/assests/data/countries.json",
+    "out/types/**/*.ts"
   ],
   "references": [
     {

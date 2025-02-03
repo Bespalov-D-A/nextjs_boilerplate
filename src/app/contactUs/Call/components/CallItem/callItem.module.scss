@@ -1,6 +1,6 @@
-@import "../../../ui/text";
-@import "../../../ui/vars";
-@import "../../../ui/mixinMedia";
+@import "../../../../ui/text";
+@import "../../../../ui/vars";
+@import "../../../../ui/mixinMedia";
 
 .wrapper {
   @include max-md {

@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import { Flex } from '@mantine/core';
 import styles from './email.module.scss'
 // components
-import ContactForm from './ContactForm';
+import ContactForm from './components/ContactForm';
 
 const Email:FC = () => {
   return (

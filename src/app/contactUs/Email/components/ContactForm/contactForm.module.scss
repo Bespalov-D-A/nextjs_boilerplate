@@ -1,6 +1,6 @@
-@import "../../../ui/text";
-@import "../../../ui/vars";
-@import "../../../ui/mixinMedia";
+@import "../../../../ui/text";
+@import "../../../../ui/vars";
+@import "../../../../ui/mixinMedia";
 
 .form {
   display: grid;
@@ -9,28 +9,6 @@
 
   @include max-md {
     grid-template-columns: 1fr;
-  }
-}
-.inputWrap {
-  margin-bottom: 24px;
-
-  label {
-    margin-bottom: 8px;
-  }
-  input {
-    height: 40px;
-    min-height: 40px;
-    border-radius: 9px;
-  }
-}
-.textArea {
-  label {
-    margin-bottom: 8px;
-  }
-  textarea {
-    height: 104px;
-    min-height: 104px;
-    border-radius: 9px;
   }
 }
 .text {

@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import { Flex } from '@mantine/core';
 import styles from './call.module.scss'
 // components
-import CallItem from './CallItem';
+import CallItem from './components/CallItem';
 
 const Call: FC = () => {
   return (

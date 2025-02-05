@@ -33,9 +33,14 @@
   display: block;
   @extend .text16;
   color: $darkText;
+  font-weight: 400;
 
   @include max-lg {
     text-align: center;
+  }
+
+  @include max-sm {
+    text-align: left;
   }
 }
 .formWrap {

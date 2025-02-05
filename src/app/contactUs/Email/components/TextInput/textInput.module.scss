@@ -1,8 +1,13 @@
 @import "../../../../ui/vars";
 @import "../../../../ui/text";
+@import "../../../../ui/mixinMedia";
 
 .inputWrap {
   margin-bottom: 24px;
+
+  @include max-md {
+    margin-bottom: 16px;
+  }
 
   label {
     @extend .text16;

@@ -30,10 +30,14 @@
   @include max-lg {
     text-align: center;
   }
+  @include max-sm {
+    text-align: left;
+  }
 }
 .content {
   @extend .text16;
   color: $darkText;
+  font-weight: 400;
 }
 .link {
   @extend .text16;

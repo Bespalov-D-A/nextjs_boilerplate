@@ -1,3 +1,8 @@
+@mixin retina {
+  @media only screen and (min-device-pixel-ratio: 2) {
+    @content;
+  }
+}
 @mixin max-lg {
   @media (max-width: 1124px) {
     @content;

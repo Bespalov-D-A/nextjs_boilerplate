@@ -20,7 +20,6 @@ interface ITextInput {
 
 const CustomSelect:FC<ITextInput> = ({label, required, errorMessage, error}) => {
   const [opened, setOpened] = useState(false);
-  console.log(opened)
   return (
     <div className={`${styles.inputWrap} ${error && styles.inputError}`}>
       <label>

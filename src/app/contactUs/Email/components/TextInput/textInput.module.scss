@@ -19,6 +19,9 @@
     height: 40px;
     min-height: 40px;
     border-radius: 9px;
+    border-color: $lightGray;
+    border-width: 2px;
+    background-color: $inputBg;
   }
 }
 .inputError {

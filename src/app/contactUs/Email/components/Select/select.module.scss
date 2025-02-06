@@ -19,6 +19,12 @@
     height: 40px;
     min-height: 40px;
     border-radius: 9px;
+    background-color: $inputBg;
+    border-color: $lightGray;
+    border-width: 2px;
+  }
+  input + div {
+    margin-right: 12px;
   }
 }
 .inputError {

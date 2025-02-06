@@ -11,9 +11,16 @@
   padding: 64px 0;
   margin-bottom: 64px;
 
-  @media only screen and (min-device-pixel-ratio: 2) {
+  @include retina {
     background-image: url('/images/header/header@2x.png');
   }
+  @include max-md {
+    height: auto;
+    padding: 45px 0;
+    background-image: none;
+    background-color: $orangeYellow;
+  }
+
 }
 .title {
   @extend .text40;

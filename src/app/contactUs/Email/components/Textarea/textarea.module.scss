@@ -1,0 +1,30 @@
+@import "../../../../ui/vars";
+@import "../../../../ui/text";
+
+.inputWrap {
+  margin-bottom: 24px;
+
+  label {
+    @extend .text16;
+    display: block;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+  textarea {
+    height: 104px;
+    min-height: 104px;
+    border-radius: 9px;
+    background-color: $inputBg;
+    border-color: $lightGray;
+    border-width: 2px;
+  }
+}
+.inputError {
+  textarea {
+    border-color: $wrongInput;
+  }
+}
+
+.errorMessage {
+  color: $wrongInput;
+}

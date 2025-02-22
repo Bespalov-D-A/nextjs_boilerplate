@@ -1,0 +1,64 @@
+@import "../../ui/text";
+@import "../../ui/vars";
+@import "../../ui/mixinMedia";
+
+.callWrap {
+  display: grid;
+  grid-template-columns: 326px 692px;
+  justify-content: space-between;
+  padding-bottom: 64px;
+  margin-bottom: 64px;
+  border-bottom: 2px solid $orangeYellow;
+
+  @include max-lg {
+    grid-template-columns: 1fr;
+  }
+}
+.titleWrap {
+  margin-bottom: 16px;
+
+  @include max-lg {
+    justify-content: center;
+    margin-bottom: 32px;
+  }
+}
+.title {
+  @extend .text40;
+  display: block;
+  margin-left: 8px;
+  font-weight: 700;
+  color: $orangeYellow;
+}
+.text {
+  display: block;
+  @extend .text16;
+  color: $darkText;
+  font-weight: 400;
+
+  @include max-lg {
+    text-align: center;
+  }
+
+  @include max-sm {
+    text-align: left;
+  }
+
+  &Mb {
+    margin-top: 16px;
+  }
+}
+.phonesWrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 42px;
+  grid-row-gap: 48px;
+
+  @include max-lg {
+    grid-template-columns: repeat(3, 180px);
+    justify-content: center;
+    margin-top: 50px;
+  }
+  @include max-md {
+    grid-template-columns: 1fr;
+  }
+}

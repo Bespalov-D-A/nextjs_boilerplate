@@ -1,0 +1,36 @@
+@import "../../../ui/vars";
+@import "../../../ui/mixinMedia";
+
+.inputWrap {
+  margin-bottom: 24px;
+
+  @include max-md {
+    margin-bottom: 16px;
+  }
+
+  label {
+    font-size: 14px;
+    line-height: 21px;
+    display: block;
+    font-weight: 500;
+    margin-bottom: 16px;
+    color: $oliveGray;
+  }
+  input {
+    height: 40px;
+    min-height: 40px;
+    border-radius: 9px;
+    border-color: $oliveGray;
+    border-width: 2px;
+    background-color: transparent;
+  }
+}
+.inputError {
+  input {
+    border-color: $wrongInput;
+  }
+}
+
+.errorMessage {
+  color: $wrongInput;
+}

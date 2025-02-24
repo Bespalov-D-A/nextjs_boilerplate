@@ -1,0 +1,48 @@
+@import "../../../ui/vars";
+@import "../../../ui/mixinMedia";
+
+.inputWrap {
+  margin-bottom: 24px;
+
+  @include max-md {
+    margin-bottom: 16px;
+  }
+
+  label {
+    font-size: 14px;
+    line-height: 21px;
+    display: block;
+    font-weight: 500;
+    margin-bottom: 16px;
+    color: $oliveGray;
+  }
+  input {
+    height: 40px;
+    min-height: 40px;
+    border-radius: 9px !important;
+    background-color: transparent;
+    border-color: $oliveGray;
+    border-width: 2px;
+  }
+  input + div {
+    margin-right: 12px;
+  }
+}
+.inputError {
+  input {
+    border-color: $wrongInput;
+  }
+}
+
+.errorMessage {
+  color: $wrongInput;
+}
+
+.selectArrow {
+  transform: scale(1,1);
+  transition: transform .4s ease-in-out;
+
+  &Open {
+    transform: scale(1,-1);
+  }
+}

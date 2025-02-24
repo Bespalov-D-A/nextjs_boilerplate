@@ -1,0 +1,81 @@
+@import "../../ui/vars";
+@import "../../ui/text";
+@import "../../ui/mixinMedia";
+
+.teamWrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  @include max-md {
+    grid-template-columns: 1fr;
+  }
+}
+
+.imgWrapper {
+  position: relative;
+  min-height: 432px;
+  background-image: url('/images/aboutUs/technologiesImg.png');
+  background-position: 100% center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include max-md {
+    order: 1;
+  }
+
+  &:before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 34px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.4);
+    z-index: 3;
+  }
+  &:after {
+    display: block;
+    content: "";
+    background-image: url('/images/aboutUs/technologiesBg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 252px;
+    height: 100%;
+    z-index: 2;
+  }
+}
+
+.textWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 34px;
+
+  @include max-md {
+    order: 2;
+  }
+}
+.title {
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: right;
+  color: $graphite;
+
+  @include max-md {
+    font-size: 32px;
+  }
+}
+.text {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 35px;
+  text-align: right;
+  color: $graphite;
+}

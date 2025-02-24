@@ -1,0 +1,74 @@
+@import "../../ui/vars";
+@import "../../ui/text";
+@import "../../ui/mixinMedia";
+
+.contactWrapper {
+  padding-top: 80px;
+}
+
+.title {
+  display: block;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  max-width: 1092px;
+  text-align: center;
+  color: $graphite;
+}
+.text {
+  display: block;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  max-width: 980px;
+  text-align: center;
+  margin-bottom: 40px;
+  color: $graphite;
+}
+.contactForm {
+  padding-bottom: 95px;
+
+  @include max-md {
+    padding-bottom: 42px;
+  }
+}
+.topWrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.5fr 1.3fr;
+  grid-column-gap: 32px;
+
+  @include max-lg {
+    grid-template-columns: 1fr 1fr;
+  }
+  @include max-md {
+    grid-template-columns: 1fr;
+  }
+}
+.phoneWrap {
+  display: grid;
+  grid-template-columns: 95px 1fr;
+  grid-column-gap: 16px;
+  align-items: flex-end;
+}
+.bottomWrap {
+  display: grid;
+  grid-template-columns: 1fr 180px;
+  grid-column-gap: 42px;
+  align-items: center;
+
+  @include max-md {
+    grid-template-columns: 1fr;
+  }
+}
+.submitBtn {
+  width: 100%;
+  background: $success;
+  color: $white;
+  height: 48px;
+  border-radius: 16px;
+
+  span {
+    color: $white;
+  }
+}
